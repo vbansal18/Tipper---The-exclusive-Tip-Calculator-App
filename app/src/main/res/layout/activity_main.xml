@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/baseText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Base"
+        android:textSize="25sp"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tipPercentText"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:textAlignment="viewEnd"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/baseText" />
+
+    <TextView
+        android:id="@+id/tipText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Tip"
+        android:textSize="25sp"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tipPercentText" />
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Total"
+        android:textSize="25sp"
+        android:textAlignment="viewEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tipText" />
+
+    <EditText
+        android:text="100"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="80dp"
+        android:id="@+id/base"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:valueFrom="0"
+        android:valueTo="30"
+        android:stepSize="1"
+        android:value="15"
+        android:id="@+id/tipSlider"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/base"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3" />
+
+    <TextView
+        android:id="@+id/Feedback"
+        android:text="Great"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tipSlider"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"/>
+
+    <TextView
+        android:id="@+id/tip"
+        android:inputType="numberDecimal"
+        android:textSize="28sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/Feedback"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:inputType="numberDecimal"
+        android:textSize="28sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tip"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"/>
+
+    <TextView
+        android:id="@+id/Credits"
+        android:text="MADE WITH ❤️ BY VAIBHAV"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
