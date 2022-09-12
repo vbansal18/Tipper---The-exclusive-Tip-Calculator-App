@@ -17,8 +17,18 @@ The following **required** functionality is completed:
 
 The following **extensions** are implemented:
 
-* [ ] Custom colors palette selected
-* [ ] List anything else that you did to improve the app functionality or design!
+* [x] Change the color scheme of the app, e.g. the background/primary/secondary color. Modify the theme at app/src/main/res/values/theme.xml
+* [x] Replace the text describing the tip (“poor”, “good”, etc) with emojis.
+* [ ] Improve the user interface through styling and coloring, e.g. change the text color, font,
+  optimize the layout for different screens.
+* [ ] Add the ability to split the bill across any number of people.
+* [ ] Add the ability to round the total bill up or down, which should update the tip amount and
+  percent automatically.
+* [ ] Add pre-defined options for service (e.g. poor, acceptable, good, excellent) which
+  automatically decide the tip percentage.
+* [ ] (Advanced) Show currency symbols, and allow the user to change their currency.
+* [ ] (Advanced) Add another screen to the app where you can see tips made in the past.
+
 
 ## Video Walkthrough
 

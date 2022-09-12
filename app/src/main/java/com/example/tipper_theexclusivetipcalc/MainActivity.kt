@@ -55,11 +55,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateFeedback(value:Int) {
         val tipDesc = when(value){
-            in 0..9 -> "Poor"
-            in 10..14 ->"Acceptable"
-            in 15..20 ->"Good"
-            in 21..25 ->"Great"
-            else ->"Amazing"
+            in 0..9 -> "🤒"
+            in 10..14 ->"😒"
+            in 15..20 ->"😁"
+            in 21..25 ->"😘"
+            else ->"😍"
         }
         Feedback.text = tipDesc
         val color = ArgbEvaluator().evaluate(
